@@ -1,0 +1,154 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.login__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    max-width: 450px;
+}
+.login__container .login__logo{
+    width: 70px;
+}
+.login__container .login__title{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 2rem 0px;
+}
+.login__container .login__info{
+    font-size: 1.7rem;
+}
+
+
+.login__container .login__form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.login__container .form__group{
+    position: relative;
+}
+.login__container .form__group .label{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: var(--dark-gray);
+    transform: translate(2.1rem,-50%);
+    font-size: 1.7rem;
+    transition: all ease-in-out .3s;
+}
+.login__container .form__group .form__input{
+    width: 100%;
+    border-radius: 8px;
+    border: 1.5px solid var(--gray);
+    padding: 1.4rem 2rem;
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    outline: none;
+    transition: margin ease-in-out .3s;
+}
+
+.login__container .form__group:nth-of-type(2){
+    margin-top: 3rem;
+}
+
+/* ::::::::::::: INPUT:Password  ::::::::::::: */
+
+.login__container .password__container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: margin ease-in-out .3s;
+}
+.login__container .password__container .password__action{
+    position: absolute;
+    right: 10px;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* ::::::::::::: INPUT:Animacion  ::::::::::::: */
+
+.login__container .form__group .input__active{
+    margin-top: 3rem;
+}
+
+.login__container .form__group .input__active + label{
+    transform: translate(0rem, -6rem);
+    color: var(--light-black);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+/* ::::::::::::: INPUT:CheckBox  ::::::::::::: */
+
+.login__container .check__container{
+    display: flex;
+    align-items: center;
+    margin: 3rem 0px;
+}
+
+.login__container .form__group input[type="radio"]{
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 3px;
+    background-color: var(--gray);
+    cursor: pointer;
+}
+.login__container .form__group input[type="radio"]:checked{
+    background-color: var(--red);
+}
+.login__container .form__group input[type="radio"]:checked::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url('../../assets/ico__checked.svg');
+    display: block;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+}
+
+.login__container .check__container label{
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+.login__container .check__container label span{
+    font-weight: 600;
+}
+
+
+.login__container .form__group > p{
+    font-size: 1.7rem;
+}
+.login__container a{
+    color: var(--red);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+.login__container .form__group input[type="submit"]{
+    color: var(--white);
+    background-color: var(--dark-black);
+    border: none;
+    border-radius: 8px;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-family: var(--primary-font);
+    cursor: pointer;
+}
+.login__container .form__submit__container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login__container > p:last-of-type{
+    margin-top: 3rem;
+}

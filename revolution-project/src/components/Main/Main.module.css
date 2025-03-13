@@ -1,0 +1,170 @@
+
+/* :::::::::::::: SECTION: OFERTA :::::::::::::: */
+
+.section__oferta .section__oferta__header{
+    text-align: center;
+    margin: 10rem 0px;
+}
+.section__oferta__header p:first-child{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+.section__oferta__header h2{
+    text-transform: uppercase;
+    color: var(--red);
+    font-size: 4.2rem;
+    font-weight: 800;
+    padding: 1.8rem 0px;
+}
+.section__oferta__body{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+.section__oferta__body .section__oferta__card{
+    height: 400px;
+    width: 400px;
+    display: block;
+    position: relative;
+    border-radius: 8px; 
+    overflow: hidden;
+    transition: transform ease-in-out .3s;
+}
+.section__oferta__body .section__oferta__card:hover{
+    transform: scale(1.1);
+}
+.section__oferta__body .section__oferta__card:hover p{
+    opacity: 0;
+}
+
+.section__oferta__body .section__oferta__card img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.section__oferta__body .section__oferta__card p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--white);
+    font-size: 3.2rem;
+    font-weight: 400;
+    text-align: center; /* Asegura que el texto esté centrado */
+    text-transform: uppercase;
+    transition: opacity  ease-in-out .3s;
+}
+
+/* :::::::::::::: SECTION: DESCUENTO :::::::::::::: */
+.section__descuento h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 8rem 0px;
+    font-size: 4.2rem;
+}
+.section__descuento h2 span{
+    color: var(--red);
+    font-weight: 800;
+}
+.section__descuento .section__body{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.section__descuento .section__img{
+    max-width: 500px;
+}
+.section__descuento .section__img img{
+    border-radius: 8px;
+}
+.section__descuento .section__card__container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+
+
+.section__descuento .section__card .card__img{
+    height: 200px;
+}
+.section__descuento .section__card img{
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+.section__descuento .section__card .card__info{
+    color: var(--dark-black);
+}
+.section__descuento .card__info h3{
+    color: var(--red);
+    margin-top: 1.2rem;
+}
+.section__descuento .card__info p:first-of-type,
+.section__descuento .card__info p:nth-of-type(2){
+    font-size: 1.6rem;
+    color: var(--light-black);
+}
+.section__descuento .card__info p:last-of-type{
+    font-weight: 600;
+}
+
+/* :::::::::::::: SECTION: CATEGORIA :::::::::::::: */
+
+.section__categoria h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    color: var(--red);
+    font-weight: 800;
+}
+.section__categoria .section__card__container{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+.section__categoria .section__card{
+    position: relative;
+    flex-grow: 1;
+    min-height: 400px;
+    min-width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform ease-in-out .3s;
+}
+.section__categoria .section__card:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.section__categoria .section__card:hover p{
+    opacity: 0;
+}
+.section__categoria .section__card img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    height: 100%;
+}
+.section__categoria .section__card p{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: var(--white);
+    font-weight: 400;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: opacity ease-in-out .3s;
+}

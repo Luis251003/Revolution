@@ -1,0 +1,131 @@
+.register__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.register{
+    max-width: 450px;
+}
+
+/* :::::::: REGISTER: Header :::::::::*/
+
+.register .register__header{
+    margin-bottom: 3rem;
+}
+.register .logo{
+    width: 70px;
+}
+.register .register__header h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 2rem;
+    font-size: 2.8rem;
+}
+.register .register__header h2 span{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+/* :::::::: REGISTER: Formulario :::::::::*/
+
+.register .register__form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+    align-items: end;
+}
+.register .form__group{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.register .form__group__active input{
+    margin-top: 3rem;
+}
+.register__container .register .form__group__active > label{
+    transform: translate(0rem, -6rem);
+    color: var(--light-black);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.register .form__group label{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: var(--dark-gray);
+    transform: translate(2.1rem,-50%);
+    font-size: 1.7rem;
+    transition: all ease-in-out .3s;
+    z-index: 1;
+    pointer-events: none;
+}
+.register .form__group input{
+    width: 100%;
+    border-radius: 8px;
+    border: 1.5px solid var(--gray);
+    padding: 1.4rem 2rem;
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    outline: none;
+    transition: margin ease-in-out .3s;
+}
+
+/* ::::::::::::: INPUT:Password  ::::::::::::: */
+
+.register__container .password__container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: margin ease-in-out .3s;
+}
+.register__container .password__container .password__action{
+    position: absolute;
+    right: 10px;
+    bottom: 1.25rem;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* ::::::::::::: INPUT:Error Messages  ::::::::::::: */
+.register__container .error__container p{
+    font-size: 1.4rem;
+    color: var(--red);
+}
+
+/* ::::::::::::: INPUT:Fechas  ::::::::::::: */
+.register .date__container h3{
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.register .date__container .form__group{
+    gap: 2rem;
+    align-items: flex-end;
+}
+
+/* ::::::::::::: REGISTER: Footer  ::::::::::::: */
+.register .register__footer{
+    display: flex;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+.register .condiciones__container label{
+    margin-left: 1rem;
+    color: var(--dark-gray);
+}
+.register .condiciones__container label a{
+    color: var(--red);
+    text-decoration: underline;
+}
+.register .register__footer .term__action{
+    border: none;
+    background-color: var(--dark-black);
+    color: var(--white);
+    font-family: var(--primary-font);
+    border-radius: 10px;
+    padding: .8rem 2.5rem;
+}

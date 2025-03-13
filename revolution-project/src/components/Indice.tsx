@@ -1,0 +1,5 @@
+export {default as Nav} from './Nav/Nav'
+export {default as Banner} from './Banner/Banner'
+export {default as Main} from './Main/Main'
+export {default as Detalle} from './Detalle/Detalle'
+export {default as DetalleComparar} from './DetalleComparar/DetalleComparar'

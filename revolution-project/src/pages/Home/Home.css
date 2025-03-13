@@ -1,0 +1,6 @@
+.video__container{
+    margin-top: 4rem;
+}
+.video__container video{
+    width: 100%;
+}

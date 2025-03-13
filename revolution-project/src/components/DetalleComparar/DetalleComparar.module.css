@@ -1,0 +1,47 @@
+.comparacion{
+    padding: 15rem 0px 5rem;
+}
+.comparacion h2{
+    text-transform: uppercase;
+}
+.comparacion .comparacion__container>p{
+    margin-top: 1rem;
+}
+.comparacion .comparacion__container i{
+    margin-right: 1rem;
+}
+.comparacion .cards__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.comparacion .cards__container .card{
+    overflow: hidden;
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dark-black);
+    cursor: pointer;
+    transition: border ease-in-out .3s
+}
+.comparacion .cards__container .card:hover{
+    border-color: var(--red);
+}
+.comparacion .cards__container .card .card__title{
+    padding: 2rem 0px;
+    color: var(--red);
+    font-size: 2.1rem;
+}
+.comparacion .cards__container .card .card__precio{
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 2.2rem;
+}
+.comparacion .cards__container .card__img{
+    max-width: 12rem;
+}

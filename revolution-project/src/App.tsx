@@ -1,6 +1,8 @@
+import {Home,Login, Register,Catalogo,Detalle, Comparacion} from "./pages/indice"
+
 function App() {
 
-  return ""
+  return <Comparacion/>
 }
 
 export default App
