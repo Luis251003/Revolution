@@ -8,6 +8,7 @@ import catalogo__05 from '../../assets/catalogo__05.jpg'
 import catalogo__06 from '../../assets/catalogo__06.jpg'
 import catalogo__07 from '../../assets/catalogo__07.webp'
 import catalogo__08 from '../../assets/catalogo__08.jpg'
+import { Link } from 'react-router-dom';
 
 const Catalogo = () =>{
     return (
@@ -42,7 +43,7 @@ const Catalogo = () =>{
                         </div>
                         <div className={style.catalogo__body}>
                             <div className={style.cards__container}>
-                                <a href='https://www.skechers.com/skechers-slip-ins-contour-foam---cozy-fit/232619_WTP.html' className={style.card}>
+                                <Link to={'/detalle'} className={style.card}>
                                     <div className={style.card__img}>
                                         <img src={catalogo__01} alt="" />
                                     </div>
@@ -52,7 +53,7 @@ const Catalogo = () =>{
                                         <p  className={style.card__color} >5 colores</p>
                                         <p  className={style.card__precio}>$85.00</p>
                                     </div>
-                                </a>
+                                </Link>
                                 <a href='https://www.skechers.com/skechers-slip-ins-relaxed-fit-respected-2.0---hagler/205381_BBK.html' className={style.card}>
                                     <div className={style.card__img}>
                                         <img src={catalogo__03} alt="" />

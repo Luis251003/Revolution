@@ -3,6 +3,7 @@ import styles from './Comparacion.module.css'
 
 import img__main from "../../assets/calzado__detalle__01.png"
 import img__secondary from "../../assets/catalogo__06.jpg"
+import { Link } from "react-router-dom"
 
 const Comparacion = () =>{
     return (
@@ -89,7 +90,7 @@ const Comparacion = () =>{
                                 </ul>
                             </div>
                         </div>
-                        <button type="button" className={styles.secondary__button}>Cambiar</button>
+                        <Link to={'/detalle'} type="button" className={styles.secondary__button}>Cambiar</Link>
                     </div>
                 </div>
             </section>

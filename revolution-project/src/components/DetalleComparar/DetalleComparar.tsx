@@ -4,6 +4,7 @@ import calzado__01 from '../../assets/comparacion__01.png'
 import calzado__02 from '../../assets/comparacion__02.png'
 import calzado__03 from '../../assets/comparacion__03.png'
 import calzado__04 from '../../assets/comparacion__04.png'
+import { Link } from 'react-router-dom'
  
 const DetalleComparar = () =>{
     return(
@@ -12,7 +13,7 @@ const DetalleComparar = () =>{
                 <h2>Productos Similares</h2>
                 <p><i className="fa-solid fa-square-check"></i>Seleccione para comparar entre tus favoritos</p>
                 <div className={styles.cards__container}>
-                    <div className={styles.card}>
+                    <Link to='/comparacion' className={styles.card}>
                         <div className={styles.card__img}>
                             <img src={calzado__01} alt="" />
                         </div>
@@ -22,8 +23,8 @@ const DetalleComparar = () =>{
                             <p  className={styles.card__color} >5 colores</p>
                             <p  className={styles.card__precio}>$90.00</p>
                         </div>
-                    </div>
-                    <div className={styles.card}>
+                    </Link>
+                    <Link to='/comparacion' className={styles.card}>
                         <div className={styles.card__img}>
                             <img src={calzado__02} alt="" />
                         </div>
@@ -33,8 +34,8 @@ const DetalleComparar = () =>{
                             <p  className={styles.card__color} >4 colores</p>
                             <p  className={styles.card__precio}>$80.00</p>
                         </div>
-                    </div>
-                    <div className={styles.card}>
+                    </Link>
+                    <Link to='/comparacion' className={styles.card}>
                         <div className={styles.card__img}>
                             <img src={calzado__03} alt="" />
                         </div>
@@ -44,8 +45,8 @@ const DetalleComparar = () =>{
                             <p  className={styles.card__color} >5 colores</p>
                             <p  className={styles.card__precio}>$120.00</p>
                         </div>
-                    </div>
-                    <div className={styles.card}>
+                    </Link>
+                    <Link to='/comparacion' className={styles.card}>
                         <div className={styles.card__img}>
                             <img src={calzado__04} alt="" />
                         </div>
@@ -55,7 +56,7 @@ const DetalleComparar = () =>{
                             <p  className={styles.card__color} >2 colores</p>
                             <p  className={styles.card__precio}>$80.00</p>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </section>

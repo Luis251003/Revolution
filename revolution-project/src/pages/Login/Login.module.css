@@ -134,7 +134,7 @@
 }
 
 
-.login__container .form__group input[type="submit"]{
+.login__container .form__group .btn__submit{
     color: var(--white);
     background-color: var(--dark-black);
     border: none;
@@ -143,6 +143,8 @@
     padding: 1rem 2rem;
     font-family: var(--primary-font);
     cursor: pointer;
+    text-decoration: none;
+    font-weight: 400;
 }
 .login__container .form__submit__container{
     display: flex;

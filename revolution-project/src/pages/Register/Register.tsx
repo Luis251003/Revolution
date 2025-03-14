@@ -2,6 +2,7 @@ import style from './Register.module.css'
 import logo from '../../assets/logo__single.webp'
 import { useState } from 'react';
 import useInputState from '../../hooks/useInputState';
+import { Link } from 'react-router-dom';
 
 
 const Register = ()=>{
@@ -73,7 +74,7 @@ const Register = ()=>{
                         <input type="checkbox" name="terms" id="terms" />
                         <label htmlFor="terms">Estoy de acuerdo con la <a href="#">Politica</a> y con los <a href="#">Terminos y Condiciones</a>.</label>
                     </div>
-                    <button type='button' className={style.term__action}>Registrar</button>
+                    <Link to={'/'} className={style.term__action}>Registrar</Link>
                 </div>
             </div>
         </div>

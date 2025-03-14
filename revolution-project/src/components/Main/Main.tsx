@@ -12,6 +12,7 @@ import img__running from '../../assets/card--running.jpg'
 import img__training from '../../assets/card--sport.jpg'
 import img__basket from '../../assets/card--basket.jpg'
 import img__casual from '../../assets/card--casual.jpg'
+import { Link } from 'react-router-dom'
 
 const Main = ()=>{
     return (
@@ -23,14 +24,14 @@ const Main = ()=>{
                     <p>25% de descuento</p>
                 </div>
                 <div className={style.section__oferta__body}>
-                    <a href='' className={style.section__oferta__card}>
+                    <Link to={'/catalogo'} className={style.section__oferta__card}>
                         <img src={img__boy} alt="" />
                         <p>Hombres</p>
-                    </a>
-                    <a href='' className={style.section__oferta__card}>
+                    </Link>
+                    <Link to={'/catalogo'} className={style.section__oferta__card}>
                         <img src={img__girl} alt="" />
                         <p>Mujeres</p>
-                    </a>
+                    </Link>
                 </div>
             </section>
             <section className={style.section__descuento + " section"}>
@@ -40,7 +41,7 @@ const Main = ()=>{
                         <img src={img__sport} alt="" />
                     </div>
                     <div className={style.section__card__container}>
-                        <a href='' className={style.section__card}>
+                        <Link to='/catalogo' className={style.section__card}>
                             <div className={style.card__img}>
                                 <img src={img__calzado01} alt="calzado01" />
                             </div>
@@ -50,9 +51,9 @@ const Main = ()=>{
                                 <p>3 colores</p>
                                 <p>$69.99</p>
                             </div>
-                        </a>
+                        </Link>
 
-                        <a href='' className={style.section__card}>
+                        <Link to='/catalogo' className={style.section__card}>
                             <div className={style.card__img}>
                                 <img src={img__calzado02} alt="calzado02" />
                             </div>
@@ -62,9 +63,9 @@ const Main = ()=>{
                                 <p>2 colores</p>
                                 <p>$45.99</p>
                             </div>
-                        </a>
+                        </Link>
 
-                        <a href='' className={style.section__card}>
+                        <Link to='/catalogo' className={style.section__card}>
                             <div className={style.card__img}>
                                 <img src={img__calzado03} alt="calzado03" />
                             </div>
@@ -74,9 +75,9 @@ const Main = ()=>{
                                 <p>3 colores</p>
                                 <p>$69.99</p>
                             </div>
-                        </a>
+                        </Link>
 
-                        <a href='' className={style.section__card}>
+                        <Link to='/catalogo' className={style.section__card}>
                             <div className={style.card__img}>
                                 <img src={img__calzado04} alt="calzado04" />
                             </div>
@@ -86,29 +87,29 @@ const Main = ()=>{
                                 <p>4 colores</p>
                                 <p>$54.99</p>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
             <section className={style.section__categoria + " section"}>
                 <h2>Compra por categoria</h2>
                 <div className={style.section__card__container}>
-                    <a className={style.section__card} href="#">
+                    <Link className={style.section__card} to="/catalogo">
                         <img src={img__training} alt="" />
                         <p>Training</p>
-                    </a>
-                    <a className={style.section__card} href="#">
+                    </Link>
+                    <Link className={style.section__card} to="/catalogo">
                         <img src={img__running} alt="" />
                         <p>Running</p>
-                    </a>
-                    <a className={style.section__card} href="#">
+                    </Link>
+                    <Link className={style.section__card} to="/catalogo">
                         <img src={img__casual} alt="" />
                         <p>Casual</p>
-                    </a>
-                    <a className={style.section__card} href="#">
+                    </Link>
+                    <Link className={style.section__card} to="/catalogo">
                         <img src={img__basket} alt="" />
                         <p>Sport</p>
-                    </a>
+                    </Link>
                 </div>
             </section>
         </main>

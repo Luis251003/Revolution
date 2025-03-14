@@ -1,0 +1,20 @@
+/* :::::::::: CARRITO: Detalles :::::::::: */
+.resumen .item__container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.resumen .item__container .item{
+    display: flex;
+    justify-content: space-between;
+}
+.resumen .item__container .item:last-child{
+    border-top: 2px dashed var(--dark-gray);
+    padding-top: 1rem;
+    font-weight: 700;
+}
+.resumen .input__container{
+    width: 100%;
+    margin-top: 2rem;
+}

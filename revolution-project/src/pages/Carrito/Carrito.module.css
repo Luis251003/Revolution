@@ -1,0 +1,144 @@
+.carrito{
+    padding-top: 7.7rem;
+}
+.carrito__container{
+    padding: 5rem 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 15rem;
+}
+.carrito h2{
+    text-transform: uppercase;
+    color: var(--red);
+    font-size: 2.6rem;
+    margin-bottom: 4rem;
+
+}
+.carrito .cards__container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+/* :::::::::: CARRITO: Descripcion :::::::::: */
+
+.carrito .cards__container .card{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 3rem;
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 3rem;
+}
+.carrito .cards__container .card:last-child{
+    border-bottom: none;
+}
+.carrito .cards__container .card__img{
+    max-width: 20rem;
+}
+.carrito .cards__container .card__button{
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+}
+.carrito .cards__container .card__button button{
+    background-color: transparent;
+    border: none;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    font-size: 2.2rem;
+}
+.carrito .cards__container .card__button button:hover{
+    color: var(--red);
+}
+.carrito .cards__container .card__button .number{
+    padding: .5rem 2rem;
+}
+
+.carrito .card .card__info a{
+    color: var(--red);
+    margin-top: 3rem;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.carrito .card .card__precio p{
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+/* :::::::::: CARRITO: Detalles :::::::::: */
+.carrito .detalles{
+    display: flex;
+    flex-direction: column;
+}
+.carrito .detalles .item__container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.carrito .detalles .item__container .item{
+    display: flex;
+    justify-content: space-between;
+}
+.carrito .detalles .item__container .item:last-child{
+    border-top: 2px solid var(--light-gray);
+    padding-top: 1rem;
+    font-weight: 700;
+}
+.carrito .detalles .input__container{
+    width: 100%;
+    margin-top: 2rem;
+}
+.carrito .detalles .input__container input{
+    width: 100%;
+    border: none;
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-family: var(--primary-font);
+    outline: none;
+}
+.carrito .detalles .resumen>button{
+    width: 100%;
+    border: none;
+    background-color: var(--dark-black);
+    border-radius: 8px;
+    padding: 1.5rem 0px;
+    font-family: var(--primary-font);
+    color: var(--white);
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.detalles .descuento .descuento__btn{
+    width: 100%;
+    border: none;
+    background-color: var(--dark-black);
+    border-radius: 8px;
+    padding: 1rem 0px;
+    font-family: var(--primary-font);
+    color: var(--white);
+    margin-top: 2rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* :::::::::: CARRITO: Pagos :::::::::: */
+.carrito .pago{
+    margin-top: 5rem;
+}
+.carrito .pago h2{
+    margin-bottom: 2rem;
+}
+.carrito .pago ul{
+    display: flex;
+    column-gap: 1.5rem;
+}
+.carrito .pago i{
+    font-size: 3rem;
+}

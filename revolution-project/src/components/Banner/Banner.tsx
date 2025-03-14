@@ -1,5 +1,6 @@
 import style from './Banner.module.css'
 import img from '../../assets/banner.jpg'
+import { Link } from 'react-router-dom'
 
 const Banner = () =>{
     return (
@@ -11,7 +12,7 @@ const Banner = () =>{
                 <h1 className={style.banner__title}>Persigue tus sueños</h1>
                 <p>Cumple tus metas solo con <span className={style.marca}>Revolution</span></p>
                 <div className={style.banner__action}>
-                    <a href="#">Ver Catálogo</a>
+                    <Link to='/catalogo'>Ver Catalogo</Link>
                 </div>
             </div>
         </div>

@@ -11,6 +11,7 @@ import detail__02 from '../../assets/calzado__list__02.png'
 import detail__03 from '../../assets/calzado__list__03.png'
 import detail__04 from '../../assets/calzado__list__04.png'
 import detail__05 from '../../assets/calzado__list__05.png'
+import { Link } from 'react-router-dom'
 
 const Detalle = () => {
 
@@ -66,7 +67,7 @@ const Detalle = () => {
                         </ul>
                     </div>
                     <div className={style.detalle__buttons}>
-                        <button type='button' className={style.primary}>Añadir al carro</button>
+                        <Link to={'/carrito'} type='button' className={style.primary}>Añadir al carro</Link>
                         <button type='button' className={style.favorite}>Favoritos <i className="fa-regular fa-heart"></i></button>
                     </div>
                     <div className={style.detalle__opciones}>

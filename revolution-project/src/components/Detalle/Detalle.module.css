@@ -116,12 +116,14 @@
     row-gap: 2rem;
     margin-bottom: 1rem;
 }
-.detalle .detalle__buttons button{
+.detalle .detalle__buttons button,
+.detalle .detalle__buttons a{
     border: none;
     border-radius: 8px;
     font-family: var(--primary-font);
     padding: 1.5rem .5rem;
     cursor: pointer;
+    text-align: center;
 }
 .detalle .detalle__buttons .primary{
     background-color: var(--dark-black);

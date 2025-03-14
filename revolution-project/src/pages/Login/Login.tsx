@@ -2,6 +2,7 @@ import style from './Login.module.css'
 import logo from '../../assets/logo__single.webp'
 import useInputState from '../../hooks/useInputState';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = ()=>{
 
@@ -44,15 +45,15 @@ const Login = ()=>{
                     </div>
 
                     <div className={style.form__group}>
-                        <p>En caso de haber olvidado su contraseña dirigete a <a href="#">Recuperar Contraseña</a></p>
+                        <p>En caso de haber olvidado su contraseña dirigete a <Link to="/register">Recuperar Contraseña</Link></p>
                     </div>
 
                     <div className={style.form__group + ' '+ style.form__submit__container}>
-                        <input type="submit" value="Continuar" />
+                        <Link to={'/'} className={style.btn__submit} type="submit">Continuar</Link>
                     </div>
                 </form>
 
-                <p>En el caso que no tengas una cuenta, <a href="#">Registrate</a></p>
+                <p>En el caso que no tengas una cuenta, <Link to="/register">Registrate</Link></p>
             </div>
         </div>
     );
